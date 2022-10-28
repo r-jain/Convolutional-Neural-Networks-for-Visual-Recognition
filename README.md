@@ -64,7 +64,7 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 >
 >PyPI distribution for these versions are not available for windows, you can download the compatible distribution from [here](https://download.pytorch.org/whl/torch_stable.html) and do a pip install.
 > 
-> I had dowloaded and installed [these]() `Python3.7 Windows` distributions from the link specified above
+> I had dowloaded and installed [these](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/wheel) `Python3.7 Windows` distributions from the link specified above
 >
 
 - Q1: [Fully-connected Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/FullyConnectedNets.html)
