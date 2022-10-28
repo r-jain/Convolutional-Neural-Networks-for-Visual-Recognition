@@ -54,6 +54,18 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
     `load CIFAR-10 data & prepare train val and test sets, feature extraction: compute a Histogram of Oriented Gradients and a color histogram using the hue channel in HSV color space, train and evaluate SVM on extracted features, visualize misclassified images, train a two-layer neural network on image features, tune hyperparameters, evaluate your final trained network on the test set.`
 
 ### **Assignment 2:**
+>
+> For the last part - Q5, you can work in either TensorFlow or PyTorch. 
+> 
+> PyTorch implementation requires the following as specified in requirements.txt for assignment2
+>
+> - torch==1.0.1.post2 
+> - torchvision==0.2.2.post3`
+>
+>PyPI distribution for these versions are not available for windows, you can download the compatible distribution from [here](https://download.pytorch.org/whl/torch_stable.html) and do a pip install.
+> 
+> I had dowloaded and installed [these]() `Python3.7 Windows` distributions from the link specified above
+>
 
 - Q1: [Fully-connected Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/FullyConnectedNets.html)
 
@@ -61,7 +73,7 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 
 - Q2: [Batch Normalization ](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/BatchNormalization.html)
 
-    `load preprocessed CIFAR-10 data, implement batch normalization forward pass, Check the training-time forward pass before and after batch normalization, implement backward pass for batch normalization and perform gradient check, implement alternative simplified batch normalization backward pass, compare both of the batch norm implementations, train a six-layer network on a subset of 1000 training examples both with and without batch normalization and visualize the results from trained networks, train 8-layer networks both with and without batch normalization using different scales for weight initialization, plot results of weight scales, train 6-layer networks both with and without batch normalization using different batch sizes, plot results of batch sizes, implement forward pass and backward pass for layer normalization and Check training-time forward pass before and after layer normalization, run the batch size experiment on layer normalization.` 
+    `load preprocessed CIFAR-10 data, implement batch normalization forward pass, Check the training-time forward pass before and after batch normalization, implement backward pass for batch normalization and perform gradient check, implement alternative simplified batch normalization backward pass, compare both of the batch norm implementations, train a six-layer network on a subset of 1000 training examples both with and without batch normalization and visualize the results from trained networks, train 8-layer networks both with and without batch normalization using different scales for weight initialization, plot results of weight scales, train 6-layer networks both with and without batch normalization using different batch sizes, plot results of batch sizes, implement forward pass and backward pass for layer normalization and Check training-time of forward pass before and after layer normalization, run the batch size experiment on layer normalization.` 
 
 - Q3: [Dropout ](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/Dropout.html)
 
