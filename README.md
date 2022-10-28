@@ -1,6 +1,6 @@
 # Convolutional Neural Networks for Visual Recognition
 
-This is the overview of implementations for [**CS231n : Convolutional Neural Networks for Visual Recognition**](http://cs231n.stanford.edu/2019/) by Stanford University.
+This is an overview of implementations for [**CS231n : Convolutional Neural Networks for Visual Recognition**](http://cs231n.stanford.edu/2019/) by Stanford University.
 
 ## Resources
 
@@ -16,53 +16,64 @@ This is the overview of implementations for [**CS231n : Convolutional Neural Net
 
 ## Implementations (Author: Rohit Jain)
 
-`python` `numpy` `matplotlib` `jupyter`
+`python` `numpy` `matplotlib` `jupyter` `PyTorch`
 
-> HTML output of jupyter notebooks for my implementattion of the year 2019 version of CS231n is avaibable [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html) for quick reference.
 >
-> Implementation was done with the following setup, various execution times in the output are from this setup:
->
+> All the implementations were done with the following setup:
 > - *Processor* - Intel Core 2 Duo CPU P8600 @2.40 GHz
 > - *RAM* - 4 GB
 > - *OS* - Windows 7
 >
+> HTML output of jupyter notebooks for my implementattion of the year 2019 version of CS231n is avaibable [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html_new) for quick reference. Assignments were re-run on a different setup and various execution time in output are for from that re-run on different configuration. 
+>
+> You can also find the output for assignment1 from the initial setup sitting [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html)
 >
 > Code for my implementations is not posted on this public repository.
 
 ### **Assignment 1:**
 
-- Q1: [k-Nearest Neighbor classifier](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html/assignment1/knn.html)
+- Q1: [k-Nearest Neighbor classifier](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment1/knn.html)
 
     `load and visualize CIFAR-10 dataset, subsample test data & train data, compute visualize & vectorize distance matrix, implement k-Nearest Neighbor classifier, Perform k-fold cross validation to find the best value of k, retrain and retest the classifier for the best value of k.`
 
-- Q2: [Training a Support Vector Machine](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html/assignment1/svm.html)
+- Q2: [Training a Support Vector Machine](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment1/svm.html)
 
     `CIFAR-10 data loading and preprocessing, prepare train val and test sets, implement a fully-vectorized loss function for the SVM, implement the fully-vectorized expression for its analytic gradient, check your implementation using numerical gradient, use a validation set to tune the learning rate and regularization strength, optimize the loss function with SGD, visualize the final learned weights.`
 
 
-- Q3: [Implement a Softmax classifier](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html/assignment1/softmax.html)
+- Q3: [Implement a Softmax classifier](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment1/softmax.html)
 
     `CIFAR-10 data loading and preprocessing, prepare train val dev and test sets, implement a fully-vectorized loss function for the Softmax classifier, implement the fully-vectorized expression for its analytic gradient, check your implementation with numerical gradient, use a validation set to tune the learning rate and regularization strength, optimize the loss function with SGD, visualize the final learned weights.`
 
-- Q4: [Two-Layer Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html/assignment1/two_layer_net.html)
+- Q4: [Two-Layer Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment1/two_layer_net.html)
 
     `implement forward pass to compute scores & data and regularization loss, implement backward pass to compute gradient of loss and perform numeric gradient checking, train the two-layer network using SGD on toy data, train the two-layer network using SGD on CIFAR-10 data with learning rate decay, visualize weights of the network, tune hyperparameters using the validation set, visualize the weights of the best network, evaluate your final trained network on the test set.`
 
-- Q5: [Higher Level Representations: Image Features](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html/assignment1/features.html)
+- Q5: [Higher Level Representations: Image Features](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment1/features.html)
 
     `load CIFAR-10 data & prepare train val and test sets, feature extraction: compute a Histogram of Oriented Gradients and a color histogram using the hue channel in HSV color space, train and evaluate SVM on extracted features, visualize misclassified images, train a two-layer neural network on image features, tune hyperparameters, evaluate your final trained network on the test set.`
 
 ### **Assignment 2:**
 
-- Q1: [Fully-connected Neural Network]()
+- Q1: [Fully-connected Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/FullyConnectedNets.html)
 
-- Q2: [Batch Normalization ]()
+    `load preprocessed CIFAR-10 data, implement affine_forward and affine_backward function, implement forward pass and backward pass for ReLU activation function, test implementations using numeric gradient checking, verify affine_relu_forward affine_relu_backward and loss function, implement TwoLayerNet, use a Solver instance to train a TwoLayerNet, visualize training loss and train / val accuracy, implement a fully-connected network with an arbitrary number of hidden layers and perform sanity checks, implement SGD+momentum &  RMSProp & Adam(with the bias correction mechanism) - update rules, train a deep network with these new update rules, visualize training loss and train / val accuracy with different update rules.`
 
-- Q3: [Dropout ]()
+- Q2: [Batch Normalization ](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/BatchNormalization.html)
 
-- Q4: [Convolutional Networks]()
+    `load preprocessed CIFAR-10 data, implement batch normalization forward pass, Check the training-time forward pass before and after batch normalization, implement backward pass for batch normalization and perform gradient check, implement alternative simplified batch normalization backward pass, compare both of the batch norm implementations, train a six-layer network on a subset of 1000 training examples both with and without batch normalization and visualize the results from trained networks, train 8-layer networks both with and without batch normalization using different scales for weight initialization, plot results of weight scales, train 6-layer networks both with and without batch normalization using different batch sizes, plot results of batch sizes, implement forward pass and backward pass for layer normalization and Check training-time forward pass before and after layer normalization, run the batch size experiment on layer normalization.` 
 
-- Q5: [PyTorch / TensorFlow on CIFAR-10]()
+- Q3: [Dropout ](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/Dropout.html)
+
+    `load preprocessed CIFAR-10 data, implement forward pass of dropout for both training and testing mode, implement backward pass for dropout and perform numerical gardient check, mofify the FullyConnectedNet implementation to use dropout and numerically gradient check the implementation, train a pair of two-layer networks on 500 training examples -  one will use no dropout and one will use a keep probability of 0.25, visualize the training and validation accuracies of the two networks over time.`
+
+- Q4: [Convolutional Networks](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/ConvolutionalNetworks.html)
+
+    `load preprocessed CIFAR-10 data, implement forward pass for convolution layer, perform image processing-'grayscale conversion and edge detection' via convolutions, visualize the results as a sanity check, implement backward pass for convolution operation and perform numerical gradient check, Implement forward pass and backward pass for max-pooling operation and perform numerical gradient check, compare the performance of naive and fast-'depends on a Cython extension' versions of convolution and max-pooling layers, implement the ThreeLayerConvNet and sanity check loss and perform numerical gradient check, train your model to overfit a small dataset and visualize training loss and train / val accuracy, train the three-layer convolutional network for one epoch, visualize first-layer convolutional filters from the trained network, implement forward pass and backward pass for spatial batch normalization and perform numerical gradient check,implement forward pass for group normalization and backward pass for spatial group normalization and perform numerical gradient check.`
+
+- Q5: [PyTorch / TensorFlow on CIFAR-10](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/PyTorch.html)
+
+    `iterate CIFAR-10 dataset through dataloader and form train and val sets, test the flatten function which reshapes image data, implement the forward pass of a three-layer convolutional network with defined architecture in Barebones PyTorch, initialize the weight matrices models, Check the accuracy of a classification model, train the model on CIFAR dataset using stochastic gradient descent without momentum, use torch.functional.cross_entropy to compute the loss, train a Two-Layer Network and check accuracy, train a three-layer convolutional network on CIFAR, set up the three-layer ConvNet and implement forward function with the defined architecture in PyTorch Module API, check the classification accuracy of neural network, train a model on CIFAR-10 using the PyTorch Module API, train a Two-Layer Network in PyTorch Module API, train a Three-Layer ConvNet with PyTorch Module API, rewrite and train two-layer fully connected network example with PyTorch Sequential API, rewrite the 2-layer ConvNet with bias with PyTorch Sequential API, experiment with architectures, hyperparameters, loss functions, and optimizers to train a model that achieves at least 70% accuracy on the CIFAR-10 validation set within 10 epochs.`
 
 ### **Assignment 3:**
 
