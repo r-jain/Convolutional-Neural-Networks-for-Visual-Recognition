@@ -24,7 +24,7 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 > - *RAM* - 4 GB
 > - *OS* - Windows 7
 >
-> HTML output of jupyter notebooks for my implementattion of the year 2019 version of CS231n is avaibable [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html_new) for quick reference. Assignments were re-run on a different setup and various execution time in output are for from that re-run on different configuration. 
+> HTML output of jupyter notebooks for my implementattion of the year 2019 version of CS231n is avaibable [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html_new) for quick reference. Assignments were re-run on a different setup and various execution time in output are from that re-run on different configuration. 
 >
 > You can also find the output for assignment1 from the initial setup sitting [here](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/html)
 >
@@ -60,11 +60,11 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 > PyTorch implementation requires the following as specified in requirements.txt for assignment2
 >
 > - torch==1.0.1.post2 
-> - torchvision==0.2.2.post3`
+> - torchvision==0.2.2.post3
 >
 >PyPI distribution for these versions are not available for windows, you can download the compatible distribution from [here](https://download.pytorch.org/whl/torch_stable.html) and do a pip install.
 > 
-> I had dowloaded and installed [these](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/wheel) `Python3.7 Windows` distributions from the link specified above
+> I had dowloaded and installed [these](https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/tree/main/2019/wheel) `Python3.7 Windows` distributions from the link specified above.
 >
 
 - Q1: [Fully-connected Neural Network](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment2/FullyConnectedNets.html)
@@ -94,15 +94,25 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 
 ### **Assignment 3:**
 
-- Q1: [Image Captioning with Vanilla RNNs]()
+- Q1: [Image Captioning with Vanilla RNNs](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment3/RNN_Captioning.html)
 
-- Q2: [Image Captioning with LSTMs]()
+    `load Microsoft COCO dataset which is stored in HDF5 format, sample a minibatch and show the images and captions, implement forward pass for a single timestep of a vanilla RNN, implement vanilla RNN step backward, perform neumerical gradient check, implement a RNN that processes an entire sequence of data, implement backward pass for vanilla RNN which runs back-propagation over the entire sequence, implement word_embedding forward to convert words into vectors. Implement backward pass for word embedding function, perform sanity check for temporal softmax loss, build an image captioning model and perform gradient check, overfit a small sample of 100 training examples, implement test-time sampling, sample from your overfitted model on both training and validation data.`
 
-- Q3: [Network Visualization: Saliency maps, Class Visualization, and Fooling Images]()
+- Q2: [Image Captioning with LSTMs](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment3/LSTM_Captioning.html)
 
-- Q4: [Style Transfer ]()
+   `Load MS-COCO data from disk, Implement forward pass for a single timestep of an LSTM, Implement backward pass for a single LSTM timestep, perform numerical gradient check, implement forward function to run an LSTM forward on an entire timeseries of data, Implement the backward pass for an LSTM over an entire timeseries of data, update the implementation of the loss method of the Captioning RNN, overfit an LSTM captioning model on a small dataset, modify sampling method  to handle the case where self.cell_type is lstm, sample from your overfit LSTM model on some training and validation set samples.`
 
-- Q5: [Generative Adversarial Networks]()
+- Q3: [Network Visualization: Saliency maps, Class Visualization, and Fooling Images](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment3/NetworkVisualization-PyTorch.html)
+
+  `download and load the pretrained SqueezeNet model, visualize some of the images along with their ground-truth labels from the ImageNet ILSVRC 2012 Classification dataset, compute a class saliency map using the model for given images and labels, visualize some class saliency maps on example images from ImageNet validation set,  implement gradient ascent over the image to generate a fooling image that the model classifies as target class, generate a fooling image, visualize the original image the fooling image and the difference between them, starting with random noise implement gradient ascent on a target class to generate an image that the network will recognize as the target class, visualize images generated for class visualization, try out class visualization on other classes.`
+
+- Q4: [Style Transfer ](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment3/StyleTransfer-PyTorch.html)
+
+  `load the pre-trained SqueezeNet model, compute the content loss for style transfer, test the content loss, compute the Gram matrix from feature, test the Gram matrix code, compute the style loss at a set of layers, test the style loss implementation, Compute total variation loss, test the TV loss implementation, run style transfer, try out and visualize style_transfer on the three different parameter sets, try out feature inversion to reconstruct an image from its feature representation, try out texture synthesis from scratch.`
+
+- Q5: [Generative Adversarial Networks](http://htmlpreview.github.io/?https://github.com/r-jain/Convolutional-Neural-Networks-for-Visual-Recognition/blob/main/2019/html_new/assignment3/Generative_Adversarial_Networks_PyTorch.html)
+
+  `prepare train / val sets of mnist dataset through PyTorch MNIST wrapper, process image data, build a PyTorch model for Discriminator implementing the specified architecture, verify the number of parameters in the discriminator, build a PyTorch model for Generator implementing the specified architecture,  verify the number of parameters in the Generator, implement binary cross-entropy loss function, implement loss function for the Discriminator, implement loss function for the Generator, test generator and discriminator loss, construct an Adam optimizer for the model with the desired hyperparameters, run a GAN, compute the Least-Squares GAN loss for the Discriminator, computes the Least-Squares GAN loss for the Generator, check loss functions, run Least Squares GAN, build a PyTorch model for the Deeply Convolutional GAN Discriminator implementing specified architecture, check the number of parameters in the classifier, Build a PyTorch model implementing the DCGAN Generator implementing specified architecture, check the number of parameters in the Generator as a sanity check, run DCGAN.`
 
 
 
