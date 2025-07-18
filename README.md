@@ -8,9 +8,9 @@ This is an overview of implementations for [**CS231n : Convolutional Neural Netw
 
 &nbsp;&nbsp;&nbsp;&nbsp;Source code as a zip file:
 
-- [Assignment1](cs231n.github.io/assignments/2019/spring1819_assignment1.zip)
-- [Assignment2](cs231n.github.io/assignments/2019/spring1819_assignment2.zip)
-- [Assignment3](cs231n.github.io/assignments/2019/spring1819_assignment3.zip)
+- [Assignment1](http://cs231n.github.io/assignments/2019/spring1819_assignment1.zip)
+- [Assignment2](http://cs231n.github.io/assignments/2019/spring1819_assignment2.zip)
+- [Assignment3](http://cs231n.github.io/assignments/2019/spring1819_assignment3.zip)
 
 &nbsp;&nbsp;&nbsp;&nbsp;Environment Setup [Instructions.](https://cs231n.github.io/setup-instructions/)
 
